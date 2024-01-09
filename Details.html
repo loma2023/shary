@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Css/style.css">
+    <title>Details</title>
+</head>
+
+<body>
+    <header></header>
+
+    <div class="main">
+
+        <div class="Parent-select-city" >
+            <div class="select-city">
+                <i class="fas fa-xmark" onclick="remove_me()"></i>
+                <div class="input-box">
+                    <label style="display: table;"> اختار منطقتك </label>
+                    <select required>
+                        <option selected disabled hidden value="">اختار منطقتك</option>
+                    </select>
+                    <button type="button" onclick="MyCity()" class="btn btnSave btnCity">حفظ المنطقة</button>
+                </div>
+            </div>
+        </div>
+
+        <section class="Details">
+            <div class="container"></div>
+
+        </section>
+    </div>
+
+
+    <script src="Js/main.js"></script>
+    <script src="Js/Details.js"></script>
+
+</body>
+
+</html>

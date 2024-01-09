@@ -1,0 +1,103 @@
+function showDataOrder(id) {
+    let Orders = []
+    if (localStorage.Orders != null) { Orders = JSON.parse(localStorage.Orders) }
+    document.querySelector("body").innerHTML += `
+    <div class="CustomerOrder active">
+    <div class="yyyy">
+    
+        <div class="dataCustomer">
+            <div class="cart-total">
+                <h3> الاسم : <span class="Name"></span></h3>
+                <h3> البريد : <span class="Email"></span></h3>
+                <h3> الهاتف : <span class="Phone"></span></h3>
+                <h3> المنطقة : <span class="City"></span></h3>
+            </div>
+            <div class="cart-total">
+                <h3> الاسم : <span class="Name">asdfa</span></h3>
+                <h3> البريد : <span class="Email">assdfsdfsdf</span></h3>
+                <h3> الهاتف : <span class="Phone">asd</span></h3>
+            </div>
+        </div>
+
+        <div class="parent-table">
+            <table class="MyTable">
+                <thead class="table-head">
+                    <tr>
+                        <td>اسم الصنف</td>
+                        <td>الكمية</td>
+                        <td>اللون</td>
+                        <td>المقاس</td>
+                        <td>الوزن</td>
+                        <td>السعر</td>
+                    </tr>
+                </thead>
+                <tbody class="table-body">
+                    <tr>
+                        <td>${Orders[id].item1}</td>
+                        <td>${Orders[id].quantity1}</td>
+                        <td>${Orders[id].color1}</td>
+                        <td>${Orders[id].size1}</td>
+                        <td>${Orders[id].weight1}</td>
+                        <td>${Orders[id].price1}</td>
+                    </tr>
+                    <tr>
+                        <td>${Orders[id].item2}</td>
+                        <td>${Orders[id].quantity2}</td>
+                        <td>${Orders[id].color2}</td>
+                        <td>${Orders[id].size2}</td>
+                        <td>${Orders[id].weight2}</td>
+                        <td>${Orders[id].price2}</td>
+                    </tr>
+                    <tr>
+                    <td>${Orders[id].item3}</td>
+                    <td>${Orders[id].quantity3}</td>
+                    <td>${Orders[id].color3}</td>
+                    <td>${Orders[id].size3}</td>
+                    <td>${Orders[id].weight3}</td>
+                    <td>${Orders[id].price3}</td>
+                </tr>
+                <tr>
+                        <td>${Orders[id].item4}</td>
+                        <td>${Orders[id].quantity4}</td>
+                        <td>${Orders[id].color4}</td>
+                        <td>${Orders[id].size4}</td>
+                        <td>${Orders[id].weight4}</td>
+                        <td>${Orders[id].price4}</td>
+                    </tr>
+                    <tr>
+                        <td>${Orders[id].item5}</td>
+                        <td>${Orders[id].quantity5}</td>
+                        <td>${Orders[id].color5}</td>
+                        <td>${Orders[id].size5}</td>
+                        <td>${Orders[id].weight5}</td>
+                        <td>${Orders[id].price5}</td>
+                    </tr>
+                    <tr>
+                        <td>${Orders[id].item6}</td>
+                        <td>${Orders[id].quantity6}</td>
+                        <td>${Orders[id].color6}</td>
+                        <td>${Orders[id].size6}</td>
+                        <td>${Orders[id].weight6}</td>
+                        <td>${Orders[id].price6}</td>
+                    </tr>
+                    <tr>
+                        <td>${Orders[id].item7}</td>
+                        <td>${Orders[id].quantity7}</td>
+                        <td>${Orders[id].color7}</td>
+                        <td>${Orders[id].size7}</td>
+                        <td>${Orders[id].weight7}</td>
+                        <td>${Orders[id].price7}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="cart-total">
+            <h3> الاسم : <span class="Name">asdfa</span></h3>
+            <h3> البريد : <span class="Email">assdfsdfsdf</span></h3>
+            <h3> الهاتف : <span class="Phone">asd</span></h3>
+        </div>
+
+    </div>
+</div>`
+}

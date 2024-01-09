@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Css/style.css">
+    <title>اضافة منطقة</title>
+</head>
+
+<body>
+
+    <header>
+    </header>
+
+    <div class="main">
+        <div class="pages">
+            <a href="AdminPage.html">الطلبات</a>
+            <a href="AddItem.html">اضافة صنف</a>
+            <a href="AddCity.html">اضافة منطقة</a>
+            <a href="AddCategory.html">اضافة قسم</a>
+        </div>
+        <section class="Confirm">
+            <h1 class="Title">اضافة منطقة</h1>
+
+            <div class="container">
+                <img src="Css/city.svg" alt="">
+                <form>
+                    <div class="input-box">
+                        <label> اسم المنطقة </label>
+                        <input type="text" class="NameCity" placeholder="اسم المنطقة">
+                    </div>
+                    <div class="input-box">
+                        <label> سعر التوصيل </label>
+                        <input type="number" class="price-delivery" placeholder="سعر التوصيل">
+                    </div>
+                    <button type="button" id="save" onclick="Add_City(id)" class="btn btnSave">حفظ المنطقة</button>
+
+                </form>
+
+            </div>
+            
+            <div class="parent-table">
+                <table class="MyTable">
+                    <thead class="table-head">
+                        <tr>
+                            <td>ID</td>
+                            <td>اسم المنطقة</td>
+                            <td>سعر التوصيل</td>
+                            <td>تعديل او حذف</td>
+                        </tr>
+                    </thead>
+                    <tbody class="table-body"></tbody>
+                </table>
+            </div>
+        </section>
+
+    </div>
+
+
+
+    <script src="Js/main.js"></script>
+    <script src="Js/GetData.js"></script>
+    <script src="Js/AddCity.js"></script>
+
+</body>
+
+</html>
